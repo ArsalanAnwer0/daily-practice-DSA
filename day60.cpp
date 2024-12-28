@@ -68,7 +68,7 @@ void insertAtPosition(node* &head,node* &tail, int position, int d){
 	temp->next = newNode;
  }
 // deleting node in LL
-void deleteLL(node* &head,node* &tail,){
+void deleteLL(node* &head,node* &tail,int position){
 	if(head == nullptr){
 	cout << "Nothing to delete! " << endl;
 	return;
