@@ -114,12 +114,13 @@ public:
 
     // Heapsort implementation
     void heapsort() {
+        // making sure that we have heap order property satisfied
         buildHeap();
         int originalSize = size;
         for (int i = size; i > 1; i--) {
             swap(arr[1], arr[i]);
             size--;
-            heapify(1);
+            heapify(1); 
         }
         size = originalSize;
     }
@@ -141,9 +142,11 @@ public:
 int main()
 {
     heap h(100);
-    int size = 5;
-    int arr[5] = {-1,65,68,61,63};
+    h.insertion(65);
+    h.insertion(68);
+    h.insertion(61);
+    h.insertion(63);
     h.buildHeap();
-    h.print();
+    h.printHeap();
     return 0;
 }
