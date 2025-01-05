@@ -118,7 +118,7 @@ int main(){
     root = takeInput(root);
     cout << endl;
     inOrder(root);
-
+    
     return 0;
 }
 
